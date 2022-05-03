@@ -1,0 +1,53 @@
+### Sign in as a user
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "ellie.k@gmail.com",
+    "password": "ellie"
+}
+
+### Post note to DB
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "author": "Ellie",
+    "note": "Note by Ellie."
+}
+
+### Get notes
+GET http://localhost:3000/notes
+Content-Type: application/json
+
+### Update note to DB
+PATCH http://localhost:3000/notes/3
+Content-Type: application/json
+
+{
+    "author": "Harryy",
+    "note": "Is this working?"
+}
+
+### Get note by user ID
+GET http://localhost:3000/notes/1
+Content-Type: application/json
+
+### Get note by author
+GET http://localhost:3000/notes/Harry
+Content-Type: application/json
+ 
+### Get note by author
+DELETE  http://localhost:3000/notes/3
+Content-Type: application/json
+
+###
+{
+    "email": "ellie.k@gmail.com",
+    "password": "ellie"
+}
+
+{
+    "email": "harrycrav@gmail.com",
+    "password": "123"
+}
